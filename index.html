@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chandan_Assignment</title>
+    <script
+      src="https://kit.fontawesome.com/ee30bcac39.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLlXfa_Y1Zspz2adZZccgMLjiSvtz-ACPowEv3rysiTg&s"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="form" id="myform">
+        <label for="name" class="starlabel">Person's Name</label>
+        <div class="name">
+          <input
+            type="text"
+            name="firstname"
+            id="first"
+            placeholder="first"
+            required
+          />
+          <input type="text" name="lastname" id="last" placeholder="last" />
+        </div>
+        <label for="contact">Contact Number</label>
+        <div class="contact">
+          <input type="text" name="contactnumber" id="number" required />
+        </div>
+        <input class="button" type="submit" value="save" />
+      </form>
+    </div>
+    <div class="display-container">
+      <div class="search-bar">
+        <input
+          type="text"
+          name="searchedname"
+          id="search-name"
+          placeholder="&#xF002; Search by name and press enter"
+          onchange="searchbyname()"
+        />
+      </div>
+      <div class="details">
+        <table>
+          <tr>
+            <th>SN.</th>
+            <th title="sortbyname" onclick="sortbyname()" class="tablenamehead">
+              Name
+            </th>
+            <th>Contact</th>
+            <th>Delete</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
